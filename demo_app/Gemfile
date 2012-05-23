@@ -9,6 +9,11 @@ gem 'sqlite3'
 
 #gem 'activerecord-sqlite3-adapter'
 
+group :test do
+gem 'rspec'
+gem 'rspec-core'
+gem 'spork'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -31,4 +36,6 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec'
+  gem 'webrat'
 end
